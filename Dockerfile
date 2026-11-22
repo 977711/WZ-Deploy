@@ -1,4 +1,4 @@
-FROM downloaderzone/dzww:latest
+FROM downloaderzone/dzhjk:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
