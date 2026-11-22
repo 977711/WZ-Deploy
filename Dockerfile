@@ -1,4 +1,4 @@
-FROM pro97775/mltb-prebuild:DZ-RM-MEGA
+FROM mltb-prebuild:DZ-ORIG
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app

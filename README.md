@@ -22,7 +22,7 @@
 <details>
   <summary><b>View all features</b></summary>
 
-- Multi-source Download: Supports torrents (qBittorrent, Aria2c), direct links, YouTube (yt-dlp), devuploads, and more
+- Multi-source Download: Supports torrents (qBittorrent, Aria2c), direct links, Mega.nz, YouTube (yt-dlp), devuploads, and more
 - Flexible Uploads: Upload to Google Drive, Telegram, RClone remotes, or supported DDL sites
 - Advanced File Management: Archive/extract (zip, rar, 7z), split/join files, rename, and more
 - User & Sudo Controls: Per-user settings, limits, and admin controls
@@ -156,3 +156,4 @@ This project is licensed under the [MIT License](LICENSE).
 <p align="center">
   <b>Made with ❤️ by Downloader Zone</b>
 </p>
+
