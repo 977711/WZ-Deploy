@@ -7,7 +7,6 @@ anytree
 apscheduler
 aioaria2
 aioqbt
-git+https://github.com/NBBotz/IMDBKit
 beautifulsoup4
 cloudscraper
 curl_cffi
@@ -18,9 +17,7 @@ google-api-python-client
 google-auth-httplib2
 google-auth-oauthlib
 gunicorn
-httpx
-httpx[socks]
-socksio
+niquests
 langcodes
 jinja2
 lxml
@@ -31,12 +28,12 @@ par2cmdline-turbo
 pillow
 psutil
 pycountry
-pymongo 
-pyrotgfork
-pytgcrypto
+pyflared
+pymongo
+wzgram
+warpcrypto
 python-magic
 pytz
-requests
 speedtest-cli
 telegraph
 tenacity

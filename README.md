@@ -22,7 +22,7 @@
 <details>
   <summary><b>View all features</b></summary>
 
-- Multi-source Download: Supports torrents (qBittorrent, Aria2c), direct links, Mega.nz, YouTube (yt-dlp), devuploads, and more
+- Multi-source Download: Supports torrents (qBittorrent, Aria2c), direct links, YouTube (yt-dlp), devuploads, and more
 - Flexible Uploads: Upload to Google Drive, Telegram, RClone remotes, or supported DDL sites
 - Advanced File Management: Archive/extract (zip, rar, 7z), split/join files, rename, and more
 - User & Sudo Controls: Per-user settings, limits, and admin controls
@@ -41,7 +41,8 @@
 
 ## 🖥️ Live Demo & Public Mirror/Leech Group
 
- - Access All Services: [Click here](https://t.me/DzoneeManagerBot)
+- Channel: [DOWNLOADER ZONE UPDATES](https://t.me/DOWNLOADERZONEUPDATES)
+- Group: [DOWNLOADER ZONE FREE MIRROR LEECH GROUP](https://t.me/downloaderzonefreemirrorleech)
 
 ---
 
@@ -76,6 +77,7 @@ All configuration is done via `config.env` (or environment variables). See `conf
 - `RCLONE_SERVE_URL`: URL for rclone serve (e.g. `http://myip:port`)
 - `RCLONE_SERVE_PORT`: Port for rclone serve (default: 8080)
 - `RCLONE_SERVE_USER`/`RCLONE_SERVE_PASS`: Auth for rclone serve
+- `CF_TUNNEL`: Set `True` to auto-create a Cloudflare (trycloudflare) quick tunnel on startup and use the generated URL as `BASE_URL` (no need to set `BASE_URL` manually)
 - `LEECH_LOG_ID`/`MIRROR_LOG_ID`: Chat IDs for logs
 - `QUEUE_ALL`/`QUEUE_DOWNLOAD`/`QUEUE_UPLOAD`: Task queue limits
 - `DAILY_TASK_LIMIT`, `DAILY_MIRROR_LIMIT`, `DAILY_LEECH_LIMIT`: User limits

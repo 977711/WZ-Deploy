@@ -25,6 +25,7 @@ var_list = [
     "OWNER_ID",
     "DATABASE_URL",
     "BASE_URL",
+    "CF_TUNNEL",
     "UPSTREAM_REPO",
     "UPSTREAM_BRANCH",
     "UPDATE_PKGS",
@@ -70,6 +71,7 @@ if not BOT_TOKEN:
 
 BOT_ID = BOT_TOKEN.split(":", 1)[0]
 
+
 async def fetch_database_config():
     """Fetch configuration from MongoDB."""
     global config_file
@@ -81,7 +83,9 @@ async def fetch_database_config():
     try:
         conn = AsyncMongoClient(DATABASE_URL, server_api=ServerApi("1"))
         db = conn.beast
-        old_config = await db.settings.deployConfig.find_one({"_id": BOT_ID}, {"_id": 0})
+        old_config = await db.settings.deployConfig.find_one(
+            {"_id": BOT_ID}, {"_id": 0}
+        )
         config_dict = await db.settings.config.find_one({"_id": BOT_ID})
         if (
             old_config is not None and old_config == config_file or old_config is None
@@ -94,6 +98,7 @@ async def fetch_database_config():
     finally:
         if conn:
             await conn.close()
+
 
 if DATABASE_URL := config_file.get("DATABASE_URL", "").strip():
     arun(fetch_database_config())
@@ -108,8 +113,8 @@ if UPSTREAM_REPO:
     update = srun(
         [
             f"git init -q \
-                     && git config --global user.email 250646631+DownloaderrZone@users.noreply.github.com \
-                     && git config --global user.name Downloader Zone \
+                     && git config --global user.email 131198906+ThePrateekBhatia@users.noreply.github.com \
+                     && git config --global user.name Prateek Bhatia \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
