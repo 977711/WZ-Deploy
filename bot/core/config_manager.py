@@ -297,8 +297,14 @@ class Config:
                 raise ValueError(f"{key} variable is missing!")
 
 
+# class BinConfig:
+#     ARIA2_NAME = "drift"
+#     QBIT_NAME = "titan"
+#     FFMPEG_NAME = "apex"
+#     RCLONE_NAME = "forge"
+
 class BinConfig:
-    ARIA2_NAME = "drift"
-    QBIT_NAME = "titan"
-    FFMPEG_NAME = "apex"
-    RCLONE_NAME = "forge"
+    ARIA2_NAME = "rushflow"
+    QBIT_NAME = "swarmcore"
+    FFMPEG_NAME = "framepulse"
+    RCLONE_NAME = "cloudsail"
