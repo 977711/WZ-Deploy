@@ -1,4 +1,4 @@
-FROM downloaderzone/dzhjk:latest
+FROM pro97775/mltb-prebuild:DZ-ORIG
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
