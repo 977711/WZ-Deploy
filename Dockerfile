@@ -1,4 +1,4 @@
-FROM pro97775/mltb-prebuild:DZ-ORIG
+FROM downloaderzone/dzww:latest
 
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
